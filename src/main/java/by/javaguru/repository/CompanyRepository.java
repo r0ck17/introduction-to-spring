@@ -1,6 +1,7 @@
 package by.javaguru.repository;
 
 import by.javaguru.model.Company;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
+@Repository
 public class CompanyRepository {
 
     private final Connection connection;
